@@ -24,9 +24,9 @@ module.exports = {
       database: 'armoney-test',
       user: 'armoney-test',
       password: 'armoney-test',
-       knexConfig:
-         searchPath: ['knex', 'public']
     },
+    knexConfig:
+      searchPath: ['knex', 'public'],
     migrations: {
       directory: '../database/migrations'
     },
