@@ -21,9 +21,9 @@ module.exports = {
     connection: {
       host: 'localhost',
       port: '9102',
-      database: 'armoney-test',
-      user: 'armoney-test',
-      password: 'armoney-test',
+      database: 'postgres',
+      user: 'postgres',
+      password: 'rootpassword',
     },
     migrations: {
       directory: '../database/migrations',
