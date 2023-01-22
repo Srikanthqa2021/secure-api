@@ -1,3 +1,4 @@
+//Updated the file
 module.exports = {
   development: {
     client: 'pg',
