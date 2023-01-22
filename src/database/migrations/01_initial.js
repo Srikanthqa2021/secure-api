@@ -1,13 +1,14 @@
 exports.up = function(knex) {
   return knex.schema
-      .createTable('users', (table) => {
+      .createTable('knex_migrations', (table) => {
         table.increments('id');
-        table.string('email', 255).notNullable();
-        table.string('password', 255).notNullable();
+        table.string('name', 255).notNullable();
+        table.string('batch', 255).notNullable();
+		table.string('migration_time',1200).notNullable();
       });
 };
 
 exports.down = function(knex) {
   return knex.schema
-      .dropTable('users');
+      .dropTable('knex_migrations');
 };
